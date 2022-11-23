@@ -16,7 +16,7 @@ docker-compose -f keycloak-postgresql.yml up
  
  - I imported the csv you sent. If you just run mongo-compose it will use inner directory for database. If you start a new mongo db it will insert those datas to new mongo.
  - i would use Spring Batch for such an import task but there is only 1000 city so i didnt use that.
- - You can use Kuehne Nagel postman collection to test this backend.
+ - You can use Kuehne Nagel postman collection to test this backend. Its under resources folder.
 
 ##Any further question you can email me : umitkirtil@gmail.com
 
