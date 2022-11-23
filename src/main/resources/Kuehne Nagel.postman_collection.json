@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "0feba41d-5203-4eb6-979c-6e858709abdc",
+		"name": "Kuehne Nagel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAccessToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "user",
+							"type": "default"
+						},
+						{
+							"key": "client_id",
+							"value": "cityclient",
+							"type": "default"
+						},
+						{
+							"key": "client_secret",
+							"value": "RSXxdQxvAyBRHtE7R7rizxGjcyLBRWYq",
+							"type": "default"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/realms/cities/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"cities",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCityByName",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPageable",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "edit City",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
