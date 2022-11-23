@@ -1,0 +1,21 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  data:
+    mongodb:
+      uri: mongodb://admin:admin@localhost:27017/cities?authSource=admin
+      authentication-database: admin
+      database: cities
+
+keycloak:
+  auth-server-url: http://localhost:8080/auth
+  realm: cities
+  resource: cityclient
+  credentials:
+    secret: RSXxdQxvAyBRHtE7R7rizxGjcyLBRWYq
+  principal-attribute: preferred_username
+  bearer-only: true
+
+server:
+  port: ${PORT:8081}
